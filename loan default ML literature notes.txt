@@ -1,0 +1,44 @@
+machine learning models, specifically XGBoost, Gradient Boosting, RandomForest, and LightGBM
+
+A structured machine learning pipeline is developed, including data preprocessing, feature engineering, class imbalance handling (SMOTE and class weighting), model training, hyperparameter tuning, and evaluation. 
+
+Models are assessed using accuracy, F1-score, ROC AUC, precision–recall curves, and confusion matrices
+
+challenges
+For example, imbalanced datasets can bias machine learning models toward majority classes, leading to suboptimal predictions for minority classes. Furthermore, financial institutions require explainable models to satisfy regulatory requirements and build trust with stakeholders
+
+Interpretability and Regulatory Compliance
+necessity of balancing performance and interpretability
+Another critical aspect of regulatory compliance is ensuring the auditability and documentatzion of the entire model development process
+
+Preprocessing and Feature Engineering
+Data Cleaning
+Categorical Encoding
+Feature Scaling
+Feature Engineering
+	debt-to-income ratio
+	age-to-experience ratio
+handling class inbalance(SMOTE)
+Feature Selection
+	Recursive Feature Elimination with Cross-Validation(RFECV) 
+	Secondary feature selection step using SelectFrom-
+Model with tree-based algorithms (e.g., Random Forest and Gradient Boosting)
+Data Splitting
+
+Model Selection and Training
+logistic regression
+Decision Tree
+Random Forest
+LightGBM
+Gradient Boosting
+ Addressing Class Imbalance
+ Hyperparameter Tuning
+ Training Process
+ Evaluation Metrics
+	Accuracy, F1-Score, ROC AUC, Precision–Recall Curve, Confusion Matrix
+	stratified 5-fold cross-validation 
+	threshold tuning; adjusting the classification threshold
+
+ Regulatory and Compliance Considerations
+Despite the substantial benefits of machine learning models, their adoption in financial institutions must consider stringent regulatory and compliance requirements, especially regarding interpretability and fairness. Regulatory bodies typically mandate transparency and clear explanations for credit decisions, particularly loan denials. Traditional credit scoring methods, such as logistic regression, inherently offer transparent decision criteria, whereas more sophisticated but opaque models like XGBoost and Gradient Boosting require
+supplementary explainability tools to satisfy regulatory scrutiny. To address these concerns, institutions should integrate Explainable AI (XAI) methods, which provide clear, intuitive explanations of predictions, thereby meeting regulatory standards for interpretability. Moreover, given increased scrutiny regarding fairness and bias, institutions must regularly perform audits and bias assessments on deployed models to ensure equitable and legally compliant decision-making
